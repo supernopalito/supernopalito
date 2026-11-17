@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="124" viewBox="0 0 840 124" role="img" aria-labelledby="title desc">
+  <title id="title">exit</title>
+  <desc id="desc">jonathan@zugolabs ejecuta exit. Gracias por pasar. Hecho en México con café y código.</desc>
+  <style>
+    svg{font-family:'JetBrains Mono','Fira Code','SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace}
+    @keyframes slide{from{transform:translateX(-840px)}to{transform:translateX(0)}}
+    @keyframes blink{0%{opacity:1}50%{opacity:0}}
+    .bar{animation:slide 5s linear infinite}
+    .blink{animation:blink 1s steps(1) infinite}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <defs>
+    <linearGradient id="barG" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1680" y2="0">
+      <stop offset="0" stop-color="#1268FF"/>
+      <stop offset=".25" stop-color="#16C5E8"/>
+      <stop offset=".5" stop-color="#1268FF"/>
+      <stop offset=".75" stop-color="#16C5E8"/>
+      <stop offset="1" stop-color="#1268FF"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1268FF" stop-opacity=".9"/>
+      <stop offset=".45" stop-color="#16C5E8" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#16C5E8" stop-opacity=".75"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#2F7BFF" stroke-opacity=".06"/>
+    </pattern>
+    <clipPath id="win"><rect width="840" height="124" rx="14"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#win)">
+    <rect width="840" height="124" fill="#060B16"/>
+    <rect width="840" height="124" fill="url(#grid)"/>
+
+    <text x="32" y="40" font-size="15"><tspan fill="#16C5E8" font-weight="700">jonathan@zugolabs</tspan><tspan fill="#EDF4FF">:</tspan><tspan fill="#4D94FF">~</tspan><tspan fill="#EDF4FF">$ exit</tspan></text>
+    <text x="32" y="68" font-size="14" fill="#C9D6EE">logout — gracias por pasar. ¿Tienes un reto? Hablemos en <tspan fill="#16C5E8" font-weight="700">zugolabs.com</tspan></text>
+    <text x="32" y="94" font-size="12" fill="#5B6B85">[Proceso completado] · hecho en México con café y código <tspan class="blink" fill="#16C5E8">█</tspan></text>
+
+    <rect class="bar" x="0" y="118" width="1680" height="6" fill="url(#barG)"/>
+  </g>
+  <rect x=".5" y=".5" width="839" height="123" rx="13.5" fill="none" stroke="url(#edge)"/>
+</svg>
