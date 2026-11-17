@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="340" viewBox="0 0 840 340" role="img" aria-labelledby="title desc">
+  <title id="title">Proyectos de ZuGo Labs</title>
+  <desc id="desc">git log de proyectos destacados: TaqrPOS, app de punto de venta para taquerías; Kraton, sitio web comercial; automatización operativa; y proyectos desarrollados bajo confidencialidad. Más en zugolabs.com.</desc>
+  <style>
+    svg{font-family:'JetBrains Mono','Fira Code','SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace}
+    @keyframes in{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+    @keyframes draw{from{stroke-dashoffset:190}to{stroke-dashoffset:0}}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+    .c{animation:in .4s ease-out both}
+    .line{stroke-dasharray:190;animation:draw 1.2s ease-out .2s both}
+    .head{animation:pulse 2s ease-in-out infinite}
+    .h{fill:#F5C451}
+    .ref{fill:#16C5E8;font-weight:700}
+    .t{fill:#EDF4FF;font-weight:700}
+    .tag{fill:#4D94FF}
+    .d{fill:#8A9BB8}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1268FF" stop-opacity=".9"/>
+      <stop offset=".45" stop-color="#16C5E8" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#16C5E8" stop-opacity=".75"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16C5E8"/>
+      <stop offset="1" stop-color="#1268FF" stop-opacity=".15"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx=".95" cy=".9" r=".55">
+      <stop offset="0" stop-color="#16C5E8" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#16C5E8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#2F7BFF" stroke-opacity=".06"/>
+    </pattern>
+    <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1" fill="#FFFFFF" fill-opacity=".02"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="win"><rect width="840" height="340" rx="14"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#win)">
+    <rect width="840" height="340" fill="#060B16"/>
+    <rect width="840" height="340" fill="url(#grid)"/>
+    <rect width="840" height="340" fill="url(#glowA)"/>
+
+    <!-- barra de título -->
+    <rect width="840" height="40" fill="#0B1426"/>
+    <line x1="0" y1="40.5" x2="840" y2="40.5" stroke="#16304F"/>
+    <circle cx="24" cy="20" r="6" fill="#FF5F57"/>
+    <circle cx="44" cy="20" r="6" fill="#FEBC2E"/>
+    <circle cx="64" cy="20" r="6" fill="#28C840"/>
+    <text x="420" y="25" text-anchor="middle" font-size="13" fill="#5B6B85">jonathan@zugolabs: ~/proyectos</text>
+
+    <!-- prompt -->
+    <text x="32" y="78" font-size="15"><tspan fill="#16C5E8" font-weight="700">jonathan@zugolabs</tspan><tspan fill="#EDF4FF">:</tspan><tspan fill="#4D94FF">~/proyectos</tspan><tspan fill="#EDF4FF">$ git log --graph --decorate</tspan></text>
+
+    <!-- riel del graph -->
+    <line class="line" x1="46" y1="108" x2="46" y2="298" stroke="url(#rail)" stroke-width="2"/>
+
+    <!-- commits -->
+    <g font-size="14">
+      <g class="c" style="animation-delay:.3s">
+        <circle class="head" cx="46" cy="114" r="6" fill="#16C5E8" filter="url(#glow)"/>
+        <text x="66" y="119"><tspan class="h">7f3a9c1</tspan> <tspan class="ref">(HEAD -&gt; main)</tspan> <tspan class="t">feat: TaqrPOS</tspan> <tspan class="tag">[app móvil]</tspan></text>
+        <text x="66" y="140" font-size="13" class="d">Punto de venta para taquerías: pedidos, operación y control en un solo lugar.</text>
+      </g>
+      <g class="c" style="animation-delay:.55s">
+        <circle cx="46" cy="164" r="5" fill="#060B16" stroke="#16C5E8" stroke-width="2"/>
+        <text x="66" y="169"><tspan class="h">4e1b07d</tspan> <tspan class="t">feat: Kraton</tspan> <tspan class="tag">[web]</tspan></text>
+        <text x="66" y="190" font-size="13" class="d">Sitio comercial que comunica valor y convierte visitas en oportunidades.</text>
+      </g>
+      <g class="c" style="animation-delay:.8s">
+        <circle cx="46" cy="214" r="5" fill="#060B16" stroke="#2F7BFF" stroke-width="2"/>
+        <text x="66" y="219"><tspan class="h">9c62e4a</tspan> <tspan class="t">feat: automatización operativa</tspan> <tspan class="tag">[automatización]</tspan></text>
+        <text x="66" y="240" font-size="13" class="d">Flujo conectado: menos tareas manuales, datos centralizados, seguimiento rápido.</text>
+      </g>
+      <g class="c" style="animation-delay:1.05s">
+        <circle cx="46" cy="264" r="5" fill="#060B16" stroke="#1268FF" stroke-width="2" stroke-dasharray="3 2"/>
+        <text x="66" y="269"><tspan class="h">2d8f5b3</tspan> <tspan class="t">chore: proyectos bajo confidencialidad</tspan> <tspan class="tag">[privado]</tspan></text>
+        <text x="66" y="290" font-size="13" class="d">Sistemas internos y productos desarrollados bajo NDA. Pregunta por ellos ;)</text>
+      </g>
+    </g>
+
+    <text class="c" style="animation-delay:1.3s" x="32" y="322" font-size="13" fill="#16C5E8">→ ver todos los proyectos en <tspan fill="#EDF4FF" font-weight="700">zugolabs.com</tspan></text>
+
+    <rect width="840" height="340" fill="url(#scan)"/>
+  </g>
+  <rect x=".5" y=".5" width="839" height="339" rx="13.5" fill="none" stroke="url(#edge)"/>
+</svg>
