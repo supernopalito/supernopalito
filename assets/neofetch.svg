@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="428" viewBox="0 0 840 428" role="img" aria-labelledby="title desc">
+  <title id="title">neofetch · jonathan@zugolabs</title>
+  <desc id="desc">Ficha tipo neofetch con el logo de ZuGo Labs en ASCII. OS: ZuGo/OS. Host: ZuGo Labs. Ubicación: México. Automatización e IA, apps iOS y Android, sitios, plataformas y dashboards, integraciones con CRM, WhatsApp, formularios y APIs. Stack: TypeScript, React, Next.js, Swift y Firebase.</desc>
+  <style>
+    svg{font-family:'JetBrains Mono','Fira Code','SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace}
+    @keyframes in{from{opacity:0;transform:translateX(-6px)}to{opacity:1;transform:none}}
+    @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    @keyframes blink{0%{opacity:1}50%{opacity:0}}
+    .logo{animation:rise .7s ease-out .1s both}
+    .r{animation:in .35s ease-out both}
+    .blink{animation:blink 1s steps(1) infinite}
+    .k{fill:#4D94FF;font-weight:700}
+    .v{fill:#C9D6EE}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <defs>
+    <linearGradient id="logoG" gradientUnits="userSpaceOnUse" x1="40" y1="150" x2="244" y2="300">
+      <stop offset="0" stop-color="#1268FF"/>
+      <stop offset="1" stop-color="#16C5E8"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1268FF" stop-opacity=".9"/>
+      <stop offset=".45" stop-color="#16C5E8" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#16C5E8" stop-opacity=".75"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx=".12" cy=".55" r=".45">
+      <stop offset="0" stop-color="#1268FF" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#1268FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#2F7BFF" stroke-opacity=".06"/>
+    </pattern>
+    <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1" fill="#FFFFFF" fill-opacity=".02"/>
+    </pattern>
+    <filter id="glow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="win"><rect width="840" height="428" rx="14"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#win)">
+    <rect width="840" height="428" fill="#060B16"/>
+    <rect width="840" height="428" fill="url(#grid)"/>
+    <rect width="840" height="428" fill="url(#glowA)"/>
+
+    <!-- barra de título -->
+    <rect width="840" height="40" fill="#0B1426"/>
+    <line x1="0" y1="40.5" x2="840" y2="40.5" stroke="#16304F"/>
+    <circle cx="24" cy="20" r="6" fill="#FF5F57"/>
+    <circle cx="44" cy="20" r="6" fill="#FEBC2E"/>
+    <circle cx="64" cy="20" r="6" fill="#28C840"/>
+    <text x="420" y="25" text-anchor="middle" font-size="13" fill="#5B6B85">jonathan@zugolabs: ~ — neofetch</text>
+
+    <!-- prompt -->
+    <text x="32" y="78" font-size="15" textLength="180" lengthAdjust="spacing"><tspan fill="#16C5E8" font-weight="700">jonathan@zugolabs</tspan><tspan fill="#EDF4FF">:</tspan><tspan fill="#4D94FF">~</tspan><tspan fill="#EDF4FF">$</tspan></text>
+    <text x="221" y="78" font-size="15" fill="#EDF4FF">neofetch</text>
+
+    <!-- logo ZG en ASCII -->
+    <g class="logo" font-size="20" fill="url(#logoG)" filter="url(#glow)">
+      <text x="40" y="168" xml:space="preserve" textLength="204" lengthAdjust="spacingAndGlyphs">███████╗ ██████╗ </text>
+      <text x="40" y="192" xml:space="preserve" textLength="204" lengthAdjust="spacingAndGlyphs">╚══███╔╝██╔════╝ </text>
+      <text x="40" y="216" xml:space="preserve" textLength="204" lengthAdjust="spacingAndGlyphs">  ███╔╝ ██║  ███╗</text>
+      <text x="40" y="240" xml:space="preserve" textLength="204" lengthAdjust="spacingAndGlyphs"> ███╔╝  ██║   ██║</text>
+      <text x="40" y="264" xml:space="preserve" textLength="204" lengthAdjust="spacingAndGlyphs">███████╗╚██████╔╝</text>
+      <text x="40" y="288" xml:space="preserve" textLength="204" lengthAdjust="spacingAndGlyphs">╚══════╝ ╚═════╝ </text>
+    </g>
+    <g class="logo">
+      <text x="40" y="330" font-size="17" font-weight="800" fill="#EDF4FF">ZuGo Labs</text>
+      <text x="40" y="352" font-size="13" fill="#5B6B85">zugolabs.com</text>
+    </g>
+
+    <!-- info -->
+    <g font-size="14">
+      <text class="r" style="animation-delay:.2s" x="290" y="112" font-size="16" textLength="163.2" lengthAdjust="spacing"><tspan fill="#16C5E8" font-weight="700">jonathan</tspan><tspan fill="#EDF4FF">@</tspan><tspan fill="#16C5E8" font-weight="700">zugolabs</tspan></text>
+      <text class="r" style="animation-delay:.25s" x="290" y="132" font-size="16" fill="#2A3D5E" textLength="163.2" lengthAdjust="spacingAndGlyphs">─────────────────</text>
+
+      <text class="r" style="animation-delay:.30s" y="162"><tspan class="k" x="290">OS</tspan><tspan class="v" x="382.4">ZuGo/OS — software que mueve tu negocio</tspan></text>
+      <text class="r" style="animation-delay:.37s" y="185"><tspan class="k" x="290">Host</tspan><tspan class="v" x="382.4">ZuGo Labs · zugolabs.com</tspan></text>
+      <text class="r" style="animation-delay:.44s" y="208"><tspan class="k" x="290">Ubicación</tspan><tspan class="v" x="382.4">México</tspan></text>
+      <text class="r" style="animation-delay:.51s" y="231"><tspan class="k" x="290">Kernel</tspan><tspan class="v" x="382.4">Automatización e IA</tspan></text>
+      <text class="r" style="animation-delay:.58s" y="254"><tspan class="k" x="290">Móvil</tspan><tspan class="v" x="382.4">Apps iOS y Android en tiempo real</tspan></text>
+      <text class="r" style="animation-delay:.65s" y="277"><tspan class="k" x="290">Web</tspan><tspan class="v" x="382.4">Sitios, plataformas y dashboards</tspan></text>
+      <text class="r" style="animation-delay:.72s" y="300"><tspan class="k" x="290">Integra</tspan><tspan class="v" x="382.4">CRM · WhatsApp · formularios · APIs</tspan></text>
+      <text class="r" style="animation-delay:.79s" y="323"><tspan class="k" x="290">Stack</tspan><tspan class="v" x="382.4">TypeScript · React · Next.js · Swift · Firebase</tspan></text>
+      <text class="r" style="animation-delay:.86s" y="346"><tspan class="k" x="290">Proceso</tspan><tspan class="v" x="382.4">entender → dar forma → construir → evolucionar</tspan></text>
+      <text class="r" style="animation-delay:.93s" y="369"><tspan class="k" x="290">Uptime</tspan><tspan class="v" x="382.4">cafeína + código, 24/7</tspan><tspan class="blink" fill="#16C5E8"> █</tspan></text>
+    </g>
+
+    <!-- paleta -->
+    <g class="r" style="animation-delay:1.05s">
+      <rect x="290" y="388" width="30" height="16" rx="2" fill="#060B16" stroke="#2A3D5E"/>
+      <rect x="324" y="388" width="30" height="16" rx="2" fill="#0B1426"/>
+      <rect x="358" y="388" width="30" height="16" rx="2" fill="#0052DD"/>
+      <rect x="392" y="388" width="30" height="16" rx="2" fill="#1268FF"/>
+      <rect x="426" y="388" width="30" height="16" rx="2" fill="#16C5E8"/>
+      <rect x="460" y="388" width="30" height="16" rx="2" fill="#3DDC97"/>
+      <rect x="494" y="388" width="30" height="16" rx="2" fill="#F5C451"/>
+      <rect x="528" y="388" width="30" height="16" rx="2" fill="#EDF4FF"/>
+    </g>
+
+    <rect width="840" height="428" fill="url(#scan)"/>
+  </g>
+  <rect x=".5" y=".5" width="839" height="427" rx="13.5" fill="none" stroke="url(#edge)"/>
+</svg>
